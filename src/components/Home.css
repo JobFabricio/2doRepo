@@ -1,0 +1,345 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1b1b32;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1b1b32;
+}
+
+.titulo {
+  text-align: center;
+  padding: 20px;
+  background-color: #1b1b32;
+}
+
+/* Estilos para el buscador */
+form {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #1b1b32;
+}
+
+input[type='text'] {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  color: #333;
+}
+
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+/* Estilos para la sección de películas */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #1b1b32;
+}
+
+.col-md-4 {
+  flex-basis: 32%;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h4 {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Estilos para el reproductor de video */
+.viewtrailer {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+}
+
+.reproductor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.youtube-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.youtube-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.boton {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #1b1b32;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos para el mensaje de carga */
+.cargando {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 50px;
+}
+
+/* Estilos para el botón de carga más */
+.text-center {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #8888ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input {
+  padding: 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  width: 200px;
+}
+
+.search-container button {
+  background-color: #9494ff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.search-container button:before {
+  content: "\f002";
+  font-family: "FontAwesome";
+  font-size: 18px;
+}
+
+.search-container button:hover {
+  background-color: #0000ff;
+}
+
+.enlaces-container {
+  display: flex;
+  justify-content: flex-end;
+  background-color:#1b1b32;
+}
+
+.enlaces-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color:white;
+}
+
+.enlaces-container li {
+  margin-left: 10px;
+  display: inline;
+  color:white;
+}
+
+.enlaces-container li a {
+  text-decoration: none;
+  color: #333;
+  color:white;
+}
+
+.load-more-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #337ab7;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.load-more-button:hover {
+  background-color: #23527c;
+}
+
+.boton-top-left {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.boton-izquierdo {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #1b1b32;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.boton-izquierdo:hover {
+  background-color: #8a85ff;
+  color: #1b1b32;
+}
+
+.boton:hover {
+  background-color: #8a85ff;
+  color: #1b1b32;
+}
+
+.movie-image {
+  width: 200px; /* Ajusta el ancho según tus necesidades */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+}
+
+.boton-historial {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3b3ba5;
+  color: #333;
+  border: none;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.boton-historial:hover {
+  background-color: #8a85ff;
+  color: #1b1b32;
+}
+
+.boton-favorito {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3b3ba5;
+  color: #333;
+  border: none;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.boton-favorito:hover {
+  background-color: #8a85ff;
+  color: #1b1b32;
+}
+
+.boton-perfil {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3b3ba5;
+  color: #333;
+  border: none;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.boton-perfil:hover {
+  background-color: #8a85ff;
+  color: #1b1b32;
+}
+
+.titulo-peliculas {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.titulo-peliculas {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+.historial-container {
+  padding: 20px;
+}
+
+.movie-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.movie-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.movie-title {
+  font-weight: bold;
+}
+
+.movie-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.Contenido{
+  background-color: #1b1b32;
+}
